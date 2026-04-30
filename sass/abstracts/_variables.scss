@@ -12,27 +12,25 @@ $code-font-stack:
   "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco",
   monospace !default;
 
-/// Copy text color
+/// Gold color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$gold: #D5966C !default;
 
-/// Main brand color
+/// Black color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$black: #151515 !default;
 
-/// Light grey
+/// Grey color
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$grey: #444444 !default;
 
-/// Medium grey
+/// White color
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$white: #FFFFFF !default;
 
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
 
-//Brakpoints
+
+//Breakpoints
 $bp-tablet: 768px;
 $bp-tablet-horizontal: 1024px;
 $bp-desktop: 1200px;
