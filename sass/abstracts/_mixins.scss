@@ -28,3 +28,28 @@
     }
   }
 }
+
+@mixin text-style($style) {
+  @if map-has-key($typography-scale, $style) {
+    $config: map-get($typography-scale, $style);
+
+    font-family: map-get($config, font-family);
+    font-size: map-get($config, font-size);
+    line-height: map-get($config, line-height);
+    font-weight: map-get($config, font-weight);
+    text-transform: map-get($config, text-transform);
+    color: map-get($config, color)
+  } @else {
+    @error "El estilo '#{$style}' no existe en typography-scale";
+  }
+}
+
+/* Example for use
+h1 {
+  @include text-style("heading-xl");
+}
+
+.card-title {
+  @include text-style("heading-l");
+}
+*/
