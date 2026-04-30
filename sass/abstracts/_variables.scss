@@ -2,15 +2,13 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
+/// Heading font family
 /// @type List
-$text-font-stack: "Poppins", sans-serif !default;
+$heading-font: "Big Shoulders", sans-serif !default;
 
-/// Code (monospace) font family
+/// Text font family
 /// @type List
-$code-font-stack:
-  "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco",
-  monospace !default;
+$text-font:"Outfit", sans-serif !default;
 
 /// Gold color
 /// @type Color
