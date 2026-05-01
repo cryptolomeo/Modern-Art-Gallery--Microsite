@@ -2,6 +2,7 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 @use "../abstracts/variables" as *;
+@use "../base/typography" as *;
 
 @mixin breakpoint($bp) {
   @if $bp == tablet {
