@@ -89,3 +89,9 @@ h1 {
 
 }
 
+// Ocultar el <br> en resoluciones mayores a 600px
+@media (min-width: 601px) {
+  br.mobile {
+    display: none;
+  }
+}
