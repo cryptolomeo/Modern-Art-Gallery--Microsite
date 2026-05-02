@@ -55,3 +55,37 @@ h1 {
   @include text-style("heading-l");
 }
 */
+
+
+@mixin button(){
+  display: flex;
+
+  &__text {
+    font-size: 20px;
+    background-color: $black;
+    color: $white;
+    padding: 24px 32px;
+    transition: all .5s ease;
+  }
+
+  &__arrow {
+    background-color: $gold;
+    color: $white;
+    padding: 24px;
+    font-size: 20px;
+    transition: all .5s ease;
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &:hover &__text {
+      background-color: $gold;
+    }
+
+  &:hover  &__arrow {
+      background-color: $black;
+  }
+
+}
+
