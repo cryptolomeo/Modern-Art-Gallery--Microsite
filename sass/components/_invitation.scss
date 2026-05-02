@@ -1,0 +1,34 @@
+@use "../abstracts/" as *;
+.gallery-invitation {
+  display:flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 120px;
+
+  &__image {
+    width: 100%;
+
+    &--primary{}
+
+    &--secondary {}
+  }
+
+  &__text {
+    display:flex;
+    flex-direction: column;
+    background-color: $black;
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  &__title {
+    @include text-style("heading-m");
+    color: $white;
+  }
+
+  &__description {
+    @include text-style("body-s");
+    color: $white;
+  }
+
+}
