@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as *;
+.gallery-intro{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 32px;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &__title {
+    @include text-style("heading-m");
+  }
+
+  &__description {
+    @include text-style("body-s");
+    margin-right: 6%;
+  }
+}
+
+
