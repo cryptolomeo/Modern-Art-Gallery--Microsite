@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 32px;
+
+  &__image{
+    width:100%;
+
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    @include text-style("heading-m");
+  }
+
+  &__description {
+    @include text-style("body-s");
+  }
+}
+
