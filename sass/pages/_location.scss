@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+main {
+  display: flex;
+  flex-direction: column;
+
+  .button {
+    position: absolute;
+    top:0;
+    left:0;
+  }
+}
+
+.location-map {
+  width:100%;
+  height: auto;
+
+  &__image {
+    width:100%;
+    height: auto;
+  }
+}
+
+.location-info{
+  display: flex;
+  flex-direction: column;
+  padding-left:  16px;
+  padding-right: 16px;
+  font-style: normal;
+  background-color: $black;
+  color: $white;
+
+  &__title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    @include text-style("heading-m");
+  }
+
+  &__street {
+    @include text-style("heading-s");
+    color: $gold;
+    padding-bottom: 20px;
+  }
+
+  &__postal-code {
+    padding-bottom: 20px;
+    @include text-style("body-s")
+  }
+
+  &__description {
+    padding-bottom: 56px;
+    @include text-style("body-s")
+  }
+
+}
