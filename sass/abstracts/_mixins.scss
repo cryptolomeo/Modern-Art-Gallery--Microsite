@@ -40,7 +40,6 @@
     line-height: map.get($config, line-height);
     font-weight: map.get($config, font-weight);
     text-transform: map.get($config, text-transform);
-    color: map.get($config, color)
   } @else {
     @error "El estilo '#{$style}' no existe en typography-scale";
   }
