@@ -1,3 +1,42 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+@use "../abstracts/" as *;
+.footer {
+
+  &--dark {
+    background-color: $black;
+    color: $white;
+  }
+
+  &--orange {
+    background-color: $gold;
+    color: $black;
+    svg path{
+      fill: $black;
+    }
+  }
+
+  &__container {
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  &__logo {}
+
+  &__logo-link {}
+
+  &__text {
+    @include text-style("body-s");
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-item {}
+
+}
