@@ -20,10 +20,12 @@
 
   &__title {
     @include text-style("heading-m");
+    color:$black;
   }
 
   &__description {
     @include text-style("body-s");
+    color: $grey;
   }
 }
 

@@ -1,4 +1,4 @@
-@use "../abstracts/mixins" as *;
+@use "../abstracts/" as *;
 .gallery-intro{
   display: flex;
   flex-direction: column;
@@ -18,10 +18,12 @@
 
   &__title {
     @include text-style("heading-m");
+    color:$black;
   }
 
   &__description {
     @include text-style("body-s");
+    color: $grey;
     margin-right: 6%;
   }
 }
