@@ -57,7 +57,9 @@ h1 {
 
 
 @mixin button(){
-  display: flex;
+  display: inline-flex;
+  width:auto;
+  cursor: pointer;
 
   &__text {
     font-size: 20px;
@@ -75,17 +77,33 @@ h1 {
     transition: all .5s ease;
     img {
       vertical-align: middle;
+      display:block;
     }
   }
 
-  &:hover &__text {
+  // Solo aplicar hover en desktop
+  @media (hover: hover){
+    &:hover &__text {
       background-color: $gold;
     }
-
-  &:hover  &__arrow {
+    &:hover &__arrow {
       background-color: $black;
+    }
   }
 
+// Feedback táctil en mobile
+  &:active {
+    transform: scale(0.98);
+
+    .button__text {
+      background-color: $gold;
+      transition: none;
+    }
+    .button__arrow {
+      background-color: $black;
+      transition: none;
+    }
+  }
 }
 
 // Ocultar el <br> en resoluciones mayores a 600px
