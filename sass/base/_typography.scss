@@ -11,7 +11,6 @@ $typography-scale: (
     line-height: 88px,
     font-weight: 900,
     text-transform: uppercase,
-    color:$black,
   ),
   "heading-l": (
     font-family: $heading-font,
@@ -19,7 +18,6 @@ $typography-scale: (
     line-height: 70px,
     font-weight: 900,
     text-transform: uppercase,
-    color:$black,
   ),
   "heading-m": (
     font-family: $heading-font,
@@ -27,7 +25,6 @@ $typography-scale: (
     line-height: 50px,
     font-weight: 900,
     text-transform: uppercase,
-    color:$black,
   ),
   "heading-s": (
     font-family: $heading-font,
@@ -35,7 +32,6 @@ $typography-scale: (
     line-height: 36px,
     font-weight: 900,
     text-transform: uppercase,
-    color:$black,
   ),
   "body-m": (
     font-family: $text-font,
@@ -43,7 +39,6 @@ $typography-scale: (
     line-height: 32px,
     font-weight: 400,
     text-transform:none,
-    color:$grey,
   ),
   "body-s": (
     font-family: $text-font,
@@ -51,6 +46,5 @@ $typography-scale: (
     line-height: 28px,
     font-weight: 400,
     text-transform: none,
-    color:$grey,
   ),
 );
