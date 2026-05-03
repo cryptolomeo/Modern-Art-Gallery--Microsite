@@ -60,6 +60,7 @@ h1 {
   display: inline-flex;
   width:auto;
   cursor: pointer;
+  align-self: flex-start;
 
   &__text {
     font-size: 20px;
