@@ -19,16 +19,18 @@
 @use "layout/header";
 @use "layout/navbar";
 @use "layout/sidebar";
-@use "layout/main";
+
 
 // 4. Components
 @use "components/button";
 @use "components/hero";
-@use "components/introduction";
-@use "components/invitation";
+
 
 // 5. Pages
 @use "pages/home";
+@use "pages/introduction";
+@use "pages/invitation";
+@use "pages/location";
 
 // 6. Themes
 @use "themes/default";
