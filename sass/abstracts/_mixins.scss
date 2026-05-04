@@ -12,20 +12,8 @@
     }
   }
 
-  @if $bp == tablethorizontal {
-    @media (min-width: $bp-tablet-horizontal) {
-      @content;
-    }
-  }
-
   @if $bp == desktop {
     @media (min-width: $bp-desktop) {
-      @content;
-    }
-  }
-
-  @if $bp == desktopxl {
-    @media (min-width: $bp-desktop-xl) {
       @content;
     }
   }
