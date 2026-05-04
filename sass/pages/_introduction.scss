@@ -4,16 +4,42 @@
   flex-direction: column;
   gap: 25px;
   margin-bottom: 32px;
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__image {
-    width: 100%;
-    height: auto;
+    &--mobile {
+      width: 100%;
+      height: auto;
+      @include breakpoint(tablet) {
+        display: none;
+      }
+
+    }
+    &--tablet {
+      display: none;
+      @include breakpoint(tablet) {
+        display: block;
+        flex:1;
+        min-width: 0;
+        max-width: 560px;
+      }
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     gap: 21px;
+    @include breakpoint(tablet) {
+      order:-1;
+      margin-top: auto;
+      margin-bottom: auto;
+      max-width: 260px
+
+    }
   }
 
   &__title {
