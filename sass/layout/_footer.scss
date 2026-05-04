@@ -22,6 +22,11 @@
     display: flex;
     flex-direction: column;
     gap: 38px;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      padding: 60px 40px;
+      gap:0px
+    }
   }
 
   &__logo {}
@@ -30,6 +35,12 @@
 
   &__text {
     @include text-style("body-s");
+    @include breakpoint(tablet) {
+      max-width:330px;
+      margin-left: auto;
+      padding-right: 40px;
+      margin-right: auto;
+    }
   }
 
   &__social {
