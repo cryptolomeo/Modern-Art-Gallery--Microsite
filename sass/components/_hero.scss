@@ -6,26 +6,58 @@
   max-width: 100%;
   gap: 32px;
   margin-bottom: 120px;
+  @include breakpoint(tablet){
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+  }
 
-  &__image{
-    width:100%;
-
+  &__image {
+    &--mobile{
+      width:100%;
+      @include breakpoint(tablet){
+        display: none;
+      }
+    }
+    &--tablet {
+        display:none;
+        @include breakpoint(tablet){
+          display: block;
+          z-index: -1;
+          width: 60vw;
+        }
+    }
   }
 
   &__text-container {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding: 0 16px;
+    @include breakpoint(tablet){
+      position: relative;
+      padding: 0;
+      left: -50px;
+      max-width: 330px;
+      min-width: 330px;
+    }
   }
 
   &__title {
     @include text-style("heading-m");
     color:$black;
+    @include breakpoint(tablet){
+      @include text-style("heading-l");
+    }
   }
 
   &__description {
     @include text-style("body-s");
     color: $grey;
+    @include breakpoint(tablet){
+      padding-right: 25px;
+    }
   }
 }
 
