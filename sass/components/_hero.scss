@@ -14,7 +14,7 @@
   }
   @include breakpoint(desktop) {
     display: grid;
-    grid-template-columns:1fr 170px 300px auto 1fr;
+    grid-template-columns:1fr 170px 320px auto 1fr;
     grid-template-rows: auto 435px;
 
   }
@@ -95,12 +95,13 @@
       padding-right: 25px;
     }
     @include breakpoint(desktop) {
+      @include text-style("body-m");
       grid-column: 4 / 6;
       grid-row: 1 / 2;
       z-index: 2;
-      max-width: 300px;
+      max-width: 370px;
       align-self: self-end;
-      padding-bottom: 40px;
+      padding-bottom: 25px;
     }
   }
 }
