@@ -33,6 +33,21 @@ main {
       width: 100%;
       height: auto;
     }
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+
+  &__image--desktop {
+    display: none;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+    @include breakpoint(desktop){
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
 }
@@ -50,7 +65,24 @@ main {
     padding-top: 88px;
     padding-bottom: 80px;
     position: relative;
+  }
+  @include breakpoint(desktop) {
+      display:block;
+      padding: initial;
+      padding-top:105px;
+      padding-bottom: 130px;
     }
+
+  &__container {
+    @include breakpoint(desktop) {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding:0 40px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+  }
 
   &__title {
     padding-top: 48px;
