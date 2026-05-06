@@ -2,4 +2,14 @@
 import { defineConfig } from "vite";
 export default defineConfig({
   base: '/Modern-Art-Gallery--Microsite/',
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        location: 'location.html',
+      }
+    }
+  }
+
 });
