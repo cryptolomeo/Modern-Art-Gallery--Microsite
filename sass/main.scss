@@ -11,23 +11,14 @@
 @use "base/typography";
 
 // 3. Layout-related sections
-@use "layout/body";
 @use "layout/container";
 @use "layout/footer";
-@use "layout/forms";
-@use "layout/grid";
-@use "layout/header";
-@use "layout/navbar";
-@use "layout/sidebar";
-
 
 // 4. Components
 @use "components/button";
 @use "components/hero";
 
-
 // 5. Pages
-@use "pages/home";
 @use "pages/introduction";
 @use "pages/invitation";
 @use "pages/location";
